@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ecf2f8;
+    font-family: 'Barlow Semi Condesed', sans-serif;
+}
+
+#testimonial-grid-container{
+    padding: 5% 3%;
+}
+
+#testimonial-1{
+    background-color: #7541c8;
+    color: white;
+}
+
+#testimonial-2{
+    background-color: #48556a;
+    color: white;
+    
+}
+
+#testimonial-3, #testimonial-5{
+    background-color: #fff;
+    color: #48556a;
+    
+}
+
+#testimonial-4{
+    background-color: #19212e;
+    color: white;
+}
+
+
+
+.grid-item{
+    margin-bottom: 16px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px rbga(0,0,0,0.2);
+    font-size: 13px;
+}
+
+
+
+.grid-item p {
+    opacity: 70%;
+
+    
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.header .name-person {
+    opacity: 100%;
+    font-size: 15px;
+}
+
+.header img {
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid purple;
+}
+
+.grid-item h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media(min-width: 576px) {
+    #testimonial-grid-container {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        
+    }
+
+    #testimonial-5{
+        flex-basis: 25%;
+        
+    }
+
+
+    #main-left{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 73%;
+    }
+
+    #main-left .grid-item {
+        margin-right: 16px;
+    }
+
+    #top {
+        display: flex;
+        flex-basis: 50%;
+        justify-content: space-between;
+    }
+
+    #bottom {
+        display: flex;
+        flex-basis: 50%;
+        justify-content: space-between;
+    }
+
+    #testimonial-1{
+        flex-basis: 63%;
+    }
+    
+    #testimonial-2{
+        flex-basis: 35%;
+        
+    }
+    
+    #testimonial-3{
+        flex-basis: 35%;
+        
+    }
+    
+    #testimonial-4{
+        flex-basis: 63%;
+    }
+
+
+}
+
+/* min-w idth -> everything below 576 will run as normal everything above 576 will
+take the characteristic that you insert inside the media query */
+
+
